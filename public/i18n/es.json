@@ -1,0 +1,13 @@
+{
+  "toolbar": {
+    "title": "Rick and Morty Explorer",
+    "languageSelector": "Selector de idioma"
+  },
+  "footer": {
+    "copyright": "Copyright © 2026 Rick and Morty Explorer. Todos los derechos reservados.",
+    "developedBy": "Desarrollado por Victor Paredes Maza"
+  },
+  "app": {
+    "title": "Personajes"
+  }
+}

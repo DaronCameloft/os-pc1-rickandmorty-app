@@ -1,0 +1,15 @@
+<section>
+  <h1>{{'app.title' | translate}}</h1>
+
+  @if (characterStore.isLoading()) {
+    <p>Loading characters...</p>
+  } @else if (characterStore.errorMessage()) {
+    <p>{{ characterStore.errorMessage() }}</p>
+  } @else {
+    <div class="character-grid">
+      @for (character of characterStore.characters(); track character.id) {
+        <app-character-item [character]="character" />
+      }
+    </div>
+  }
+</section>

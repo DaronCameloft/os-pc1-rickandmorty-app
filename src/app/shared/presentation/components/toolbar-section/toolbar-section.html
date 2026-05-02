@@ -1,0 +1,20 @@
+<mat-toolbar>
+  <div class="brand">
+    <img src="/favicon.ico" alt="Rick and Morty Image">
+    <p> {{'toolbar.title' | translate}} </p>
+  </div>
+
+  <mat-button-toggle-group
+    [value]="currentLanguage"
+    [attr.aria-label]="'toolbar.languageSelector' | translate">
+
+    <mat-button-toggle value="en" (click)="changeLanguage('en')">
+      EN
+    </mat-button-toggle>
+
+    <mat-button-toggle value="es" (click)="changeLanguage('es')">
+      ES
+    </mat-button-toggle>
+
+    </mat-button-toggle-group>
+</mat-toolbar>
